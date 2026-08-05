@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Brew | Receipt</title>
+
+    <link rel="stylesheet" href="css/receipt.css">
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+
+<body>
+
+    <div class="receipt-box">
+
+        <h1> Midnight Brew</h1>
+        <p class="tagline">Your perfect cup, every time.</p>
+
+        <hr>
+
+        <h2>Order Receipt</h2>
+
+        <ul id="receipt-items"></ul>
+
+        <div class="summary">
+            <p>Subtotal: ₹<span id="sub-total"></span></p>
+            <p>GST (5%): ₹<span id="gst"></span></p>
+            <p class="final">Grand Total: ₹<span id="grand-total"></span></p>
+        </div>
+
+        <button onclick="window.print()" class="print-btn">Print Receipt</button>
+
+    </div>
+
+    <script src="js/receipt.js"></script>
+</body>
+
+</html>
